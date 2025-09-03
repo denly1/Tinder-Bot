@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+ENV/
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project media/storage
+photos/
+videos/
+user_media/
+
+# Alembic cache
+alembic/*.pyc
+
+# Logs
+*.log
+/var/log/
+
+# IDE
+.vscode/
+.idea/
+
+# Dist
+build/
+dist/
+*.egg-info/
