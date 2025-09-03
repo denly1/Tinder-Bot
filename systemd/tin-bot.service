@@ -1,0 +1,17 @@
+[Unit]
+Description=Tin Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/tin-bot
+EnvironmentFile=/etc/tin-bot.env
+ExecStart=/opt/tin-bot/venv/bin/python -u main.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/tin-bot/bot.log
+StandardError=append:/var/log/tin-bot/bot.err.log
+
+[Install]
+WantedBy=multi-user.target
